@@ -93,6 +93,11 @@ h1 {
 .logo {
   margin: 0 auto;
   width: 62.08vw;
+  height: 19.17vw;
+}
+.logo1 {
+  width: 62.08vw;
+  height: 19.17vw;
 }
 /* первый ряд */
 .tophouses {
@@ -203,11 +208,18 @@ h1 {
   position: relative;
   margin-left: 9.03vw;
 }
+.plan {
+  position: relative;
+  width: 86.88vw;
+  height: 142.92vw;
+}
 .dining {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
   clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
   position: absolute;
   margin-left: -86.88vw;
+  width: 49.10vw;
+  height: 39.79vw;
 }
 .dining:hover {
   opacity: 0;
@@ -218,6 +230,8 @@ h1 {
 clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   position: absolute;
   margin-left: -48.26vw;
+  width: 48.26vw;
+  height: 62.15vw;
 }
 .sleeping:hover {
   opacity: 0;
@@ -229,6 +243,8 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   position: absolute;
   margin-left: -86.88vw;
   margin-top: 38.96vw;
+  width: 38.47vw;
+  height: 30vw;
 }
 .working:hover {
   opacity: 0;
@@ -240,10 +256,12 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   position: absolute;
   margin-left: -87.01vw;
   margin-top: 0vw;
+  width: 62.50vw;
+  height: 117.50vw;
 }
 .living:hover {
   opacity: 0;
-    transition: all .3s;
+  transition: all .3s;
 }
 .washing {
   -webkit-clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
@@ -251,6 +269,8 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   position: absolute;
   margin-left: -34.31vw;
   margin-top: 90.69vw;
+  width: 34.31vw;
+  height: 26.67vw;
 }
 .washing:hover {
   opacity: 0;
@@ -262,6 +282,8 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   position: absolute;
   margin-left: -86.88vw;
   margin-top: 116.60vw;
+  width: 60vw;
+  height: 26.32vw;
 }
 .stairs:hover {
   opacity: 0;
