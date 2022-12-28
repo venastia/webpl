@@ -1,0 +1,316 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'TT Norms Pro Normal', sans-serif;
+  background-color: #11112B;
+}
+a { color: inherit;
+}
+* {
+  box-sizing: border-box;
+}
+/* общие свойства */
+h2 {
+  font-size: 32px;
+  line-height: 41px;
+  color: #11112B;
+  font-weight: normal;
+}
+p {
+  font-size: 16px;
+  line-height: 20.5px;
+  color: #11112B;
+  font-weight: normal;
+}
+h1 {
+  font-size: 158px;
+  line-height: 202px;
+  color: #11112B;
+  font-weight: normal;
+}
+/* первый блок */
+.firstblock {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  /* margin-bottom: 50px; */
+}
+.XXL, .NYC, .Intimate, .WTF, .A, .Acorn, .Socrate, .Bungalow {
+  position: relative;
+  background-color: #F3F3F3;
+  width: 439px;
+  height: 439px;
+  border-radius: 26px;
+  margin-left: 16px;
+  padding-left: 33px;
+  padding-top: 27px;
+}
+.firstblock p, .firstblock h2 {
+  opacity: 0;
+}
+.Socrate {
+  background-image: url('../images/Socrates.svg');
+}
+.Acorn {
+  background-image: url('../images/acorn.svg');
+}
+.Bungalow {
+  background-image: url('../images/bungalow.svg');
+}
+.A {
+  background-image: url('../images/A.svg');
+}
+.NYC {
+  background-image: url('../images/NYC.svg');
+}
+.Intimate {
+  background-image: url('../images/intimate.svg');
+}
+.XXL {
+  background-image: url('../images/XXL.svg');
+}
+.WTF {
+  background-image: url('../images/WTF.svg');
+}
+.WTF:hover, .Acorn:hover, .Socrate:hover, .Bungalow:hover, .A:hover, .NYC:hover, .Intimate:hover, .XXL:hover, .WTF:hover{
+  background-color: #AED9F4;
+  transition: all .3s;
+
+}
+.WTF:hover p, .Acorn:hover p, .Socrate:hover p, .Bungalow:hover p, .A:hover p, .NYC:hover p, .Intimate:hover p, .XXL:hover p, .WTF:hover p {
+  opacity: 1;
+  transition: all .3s;
+}
+.WTF:hover h2, .Acorn:hover h2, .Socrate:hover h2, .Bungalow:hover h2, .A:hover h2, .NYC:hover h2, .Intimate:hover h2, .XXL:hover h2, .WTF:hover h2 {
+  opacity: 1;
+  transition: all .3s;
+
+}
+.image {
+  margin: 0 auto;
+  width: 894px;;
+}
+/* первый ряд */
+.tophouses {
+  width: 3640px;
+  display: flex;
+  padding: 30px 0px;
+  animation: tophouses-move 4s linear infinite;
+  animation-play-state: running;
+}
+.tophouses:hover {
+  animation-play-state: paused;
+}
+
+/* второй ряд */
+.bottomhouses {
+  width: 3640px;
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+  animation: bottomhouses-move 4s linear infinite;
+  animation-play-state: running;
+}
+.bottomhouses:hover{
+  animation-play-state: paused;
+}
+
+
+/* третий блок */
+.thirdblock {
+  padding-top: 50px;
+  width: 1440px;
+  overflow: hidden;
+}
+.house, .people, .heart, .flame {
+  width: 569px;
+  height: 557px;
+  border-radius: 26px;
+  display: inline-block;
+  position: relative;
+  animation: blink .4s steps(1) alternate infinite;
+  animation-play-state: running;
+  background-color: #F3F3F3;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+.house {
+  background-image: url("../images/housesprint.svg");
+  margin-left: -22px;
+}
+.people {
+  background-image: url("../images/peoplesprint.svg");
+}
+.heart {
+  background-image: url("../images/heartsprint.svg");
+  margin-left: -22px;
+}
+.flame {
+  background-image: url("../images/flamesprint.svg");
+}
+.values {
+  position: absolute;
+  width: 1130px;
+  height: 282px;
+  left: 732px;
+  top: 3859px;
+  border-radius: 0px 0px 26px 26px;
+  background-color: #F3F3F3;
+  transform: rotate(90deg);
+  overflow: hidden;
+}
+.values h1 {
+  /* абслют */
+  width: 4034px;
+  margin-top: 32px;
+  animation: values-move 7s reverse linear infinite;
+}
+.coloredvalues {
+  color: #E84A0F;
+}
+.house_value, .people_value, .heart_value, .flame_value {
+  position: absolute;
+  width: 569px;
+  height: 557px;
+  border-radius: 26px;
+  display: inline-block;
+  background: #AED9F4;
+  opacity: 0;
+  text-align: center;
+}
+.people_value:hover, .house_value:hover, .heart_value:hover, .flame_value:hover {
+  opacity: 1;
+  transition: all .2s;
+}
+.house_value h1, .people_value h1, .heart_value h1, .flame_value h1 {
+  line-height: 130px;
+  margin-top: 190px;
+}
+.people_value h1 {
+  margin-top: 128px;
+}
+
+.secondblock {
+  overflow: hidden;
+  padding-top: 50px;
+  position: relative;
+  margin-left: 130px;
+}
+.dining {
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
+  position: absolute;
+  margin-left: -1251px;
+}
+.dining:hover {
+  opacity: 0;
+    transition: all .3s;
+}
+.sleeping {
+  -webkit-clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
+clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
+  position: absolute;
+  margin-left: -695px;
+}
+.sleeping:hover {
+  opacity: 0;
+    transition: all .3s;
+}
+.working {
+  -webkit-clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
+  clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
+  position: absolute;
+  margin-left: -1251px;
+  margin-top: 561px;
+}
+.working:hover {
+  opacity: 0;
+    transition: all .3s;
+}
+.living {
+  -webkit-clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
+clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
+  position: absolute;
+  margin-left: -1253px;
+  margin-top: 0px;
+}
+.living:hover {
+  opacity: 0;
+    transition: all .3s;
+}
+.washing {
+  -webkit-clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
+  position: absolute;
+  margin-left: -494px;
+  margin-top: 1306px;
+}
+.washing:hover {
+  opacity: 0;
+    transition: all .3s;
+}
+.stairs {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
+  position: absolute;
+  margin-left: -1251px;
+  margin-top: 1679px;
+}
+.stairs:hover {
+  opacity: 0;
+    transition: all .3s;
+}
+
+.footer {
+  overflow: hidden;
+  padding-top: 50px;
+}
+.footer img {
+  width: 5429px;
+  align-items: center;
+  animation: footer-move 4s linear infinite;
+  animation-play-state: running;
+}
+.footer_text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+}
+.footer p {
+  color: #F3F3F3;
+}
+.stone1 {
+  position: absolute;
+  margin-left: -300px;
+  margin-top: 497px;
+}
+
+
+
+/* анимации */
+@keyframes tophouses-move {
+  0% {margin-left: -1820px;}
+  100% {margin-left: 0px;}
+}
+@keyframes bottomhouses-move {
+  0% {margin-left: -1820px;}
+  100% {margin-left: 0px;}
+}
+@keyframes blink {
+  0% {background-position: 0px top;}
+  20% {background-position: -569px top;}
+  40% {background-position: -1138px top;}
+  60% {background-position: -1707px top;}
+  80% {background-position: -2276px top;}
+  100% {background-position: -2845px top;}
+}
+@keyframes values-move {
+  0% {margin-left: -2904px;}
+  100% {margin-left: 0px;}
+}
+@keyframes footer-move {
+  0% {margin-left: -3822px;}
+  100% {margin-left: 0px;}
+}
