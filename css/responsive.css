@@ -19,7 +19,7 @@
   max-width: 480px;
 }
 .tophouses, .bottomhouses {
-  width: 406.04vw;
+  width: 576.03vw;
 }
 .firstblock p, .firstblock h2 {
   opacity: 1;
@@ -28,8 +28,8 @@
   margin-top: 11vw;
 }
 .XXL, .NYC, .Intimate, .WTF, .A, .Acorn, .Socrate, .Bungalow {
-  width: 49.17vw;
-  height: 49.17vw;
+  width: 70vw;
+  height: 70vw;
 }
 .logo1 {
   width: 89vw;
@@ -87,11 +87,11 @@ h2 {
   width: 14vw;
 }
 @keyframes tophouses-move {
-  0% {margin-left: -202.92vw;}
+  0% {margin-left: -288.015vw;}
   100% {margin-left: 0vw;}
 }
 @keyframes bottomhouses-move {
-  0% {margin-left: -202.92vw;}
+  0% {margin-left: -288.015vw;}
   100% {margin-left: 0vw;}
 }
 @keyframes values-move {

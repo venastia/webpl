@@ -1,3 +1,4 @@
+/* общие свойства */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9,39 +10,65 @@ body {
   margin: 0 auto;
   position: relative;
 }
-
-
 a { color: inherit;
 }
 * {
   box-sizing: border-box;
 }
-/* общие свойства */
-h2 {
-  font-size: 2.22vw;
-  line-height: 2.85vw;
+p, h2, h1 {
+  font-weight: normal;
+  color: #11112B;
   color: #11112B;
   font-weight: normal;
 }
 p {
   font-size: 1.11vw;
   line-height: 1.39vw;
-  color: #11112B;
-  font-weight: normal;
 }
 h1 {
   font-size: 10.97vw;
   line-height: 14.03vw;
-  color: #11112B;
-  font-weight: normal;
 }
+h2 {
+  font-size: 2.22vw;
+  line-height: 2.85vw;
+}
+
+
 /* первый блок */
 .firstblock {
+  display: block;
   width: 100%;
   overflow: hidden;
-  display: block;
-  /* margin-bottom: 50px; */
 }
+.firstblock p, .firstblock h2 {
+  opacity: 0;
+}
+/* первый ряд построек */
+.tophouses {
+  width: 252.78vw;
+  display: flex;
+  padding: 2.08vw;
+  animation: tophouses-move 4s linear infinite;
+  animation-play-state: running;
+}
+.tophouses:hover {
+  animation-play-state: paused;
+}
+
+/* второй ряд построек */
+.bottomhouses {
+  width: 252.78vw;
+  display: flex;
+  padding-top: 2.08vw;
+  align-items: center;
+  animation: bottomhouses-move 4s linear infinite;
+  animation-play-state: running;
+}
+.bottomhouses:hover{
+  animation-play-state: paused;
+}
+/* карточки построек */
 .XXL, .NYC, .Intimate, .WTF, .A, .Acorn, .Socrate, .Bungalow {
   position: relative;
   background-color: #F3F3F3;
@@ -53,8 +80,10 @@ h1 {
   padding-top: 1.88vw;
   background-size: 100%;
 }
-.firstblock p, .firstblock h2 {
-  opacity: 0;
+.WTF:hover, .Acorn:hover, .Socrate:hover, .Bungalow:hover, .A:hover, .NYC:hover, .Intimate:hover, .XXL:hover, .WTF:hover{
+  background-color: #AED9F4;
+  transition: all .3s;
+  background-size: 100%;
 }
 .Socrate {
   background-image: url('../images/Socrates.svg');
@@ -80,12 +109,6 @@ h1 {
 .WTF {
   background-image: url('../images/WTF.svg');
 }
-.WTF:hover, .Acorn:hover, .Socrate:hover, .Bungalow:hover, .A:hover, .NYC:hover, .Intimate:hover, .XXL:hover, .WTF:hover{
-  background-color: #AED9F4;
-  transition: all .3s;
-  background-size: 100%;
-
-}
 .WTF:hover p, .Acorn:hover p, .Socrate:hover p, .Bungalow:hover p, .A:hover p, .NYC:hover p, .Intimate:hover p, .XXL:hover p, .WTF:hover p {
   opacity: 1;
   transition: all .3s;
@@ -93,8 +116,8 @@ h1 {
 .WTF:hover h2, .Acorn:hover h2, .Socrate:hover h2, .Bungalow:hover h2, .A:hover h2, .NYC:hover h2, .Intimate:hover h2, .XXL:hover h2, .WTF:hover h2 {
   opacity: 1;
   transition: all .3s;
-
 }
+/* лого */
 .logo {
     width: 100vw;
     height: 19.17vw;
@@ -104,123 +127,23 @@ h1 {
   width: 62.08vw;
   height: 19.17vw;
 }
-/* первый ряд */
-.tophouses {
-  width: 252.78vw;
-  display: flex;
-  padding: 2.08vw 0vw;
-  animation: tophouses-move 4s linear infinite;
-  animation-play-state: running;
-}
-.tophouses:hover {
-  animation-play-state: paused;
-}
-
-/* второй ряд */
-.bottomhouses {
-  width: 252.78vw;
-  display: flex;
-  padding-top: 2.08vw;
-  align-items: center;
-  animation: bottomhouses-move 4s linear infinite;
-  animation-play-state: running;
-}
-.bottomhouses:hover{
-  animation-play-state: paused;
-}
 
 
-/* третий блок */
-.thirdblock {
-  padding-top: 3.47vw;
-  width: 100vw;
-  overflow: hidden;
-}
-.house, .people, .heart, .flame {
-  width: 39.51vw;
-  height: 38.68vw;
-  border-radius: 1.81vw;
-  display: inline-block;
-  position: relative;
-  animation: blink .4s steps(1) alternate infinite;
-  animation-play-state: running;
-  background-color: #F3F3F3;
-  margin-right: 1.11vw;
-  margin-top: 1.11vw;
-  background-size: auto 100%;
-
-}
-.house {
-  background-image: url("../images/housesprint.svg");
-  margin-left: -1.53vw;
-}
-.people {
-  background-image: url("../images/peoplesprint.svg");
-}
-.heart {
-  background-image: url("../images/heartsprint.svg");
-  margin-left: -1.53vw;
-}
-.flame {
-  background-image: url("../images/flamesprint.svg");
-}
-.values {
-  position: absolute;
-  width: 78.47vw;
-  height: 19.58vw;
-  left: 50.83vw;
-  top: 266.99vw;
-  margin-left: 1.11vw;
-  border-radius: 0vw 0vw 1.81vw 1.81vw;
-  background-color: #F3F3F3;
-  transform: rotate(90deg);
-  overflow: hidden;
-
-}
-.values h1 {
-  /* абслют */
-  width: 280.14vw;
-  margin-top: 2.22vw;
-  animation: values-move 7s reverse linear infinite;
-}
-.coloredvalues {
-  color: #E84A0F;
-}
-.house_value, .people_value, .heart_value, .flame_value {
-  position: absolute;
-  width: 39.51vw;
-  height: 38.68vw;
-  border-radius: 1.81vw;
-  display: inline-block;
-  background: #AED9F4;
-  background-size: 100%;
-  opacity: 0;
-  text-align: center;
-}
-.people_value:hover, .house_value:hover, .heart_value:hover, .flame_value:hover {
-  opacity: 1;
-  transition: all .2s;
-}
-.house_value h1, .people_value h1, .heart_value h1, .flame_value h1 {
-  line-height: 9.03vw;
-  margin-top: 13.19vw;
-}
-.people_value h1 {
-  margin-top: 8.89vw;
-}
-
+/* второй блок */
 .secondblock {
   overflow: hidden;
   padding-top: 3.47vw;
   position: relative;
   text-align: center;
-  /* margin-left: 9.03vw; */
+}
+.secondblock h2 {
+  display: none;
+  position: absolute;
 }
 .plan {
   position: relative;
   width: 86.88vw;
   height: 142.92vw;
-
 }
 .dining {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
@@ -264,7 +187,7 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
 }
 .living {
   -webkit-clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
-clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
+  clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
   position: absolute;
   margin-left: -87.01vw;
   margin-top: 0vw;
@@ -288,7 +211,7 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
 }
 .washing:hover {
   opacity: 0;
-    transition: all .3s;
+  transition: all .3s;
 }
 .stairs {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
@@ -302,24 +225,112 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
 }
 .stairs:hover {
   opacity: 0;
-    transition: all .3s;
+  transition: all .3s;
 }
-.secondblock h2 {
-  display: none;
+/* камень */
+.stone1 {
   position: absolute;
+  margin-left: -18vw;
+  margin-top: 34.51vw;
+  width: 25.69vw;
+  height: 50.69vw;
 }
 
+
+/* третий блок */
+.thirdblock {
+  padding-top: 3.47vw;
+  width: 100vw;
+  overflow: hidden;
+}
+/* картинки */
+.house, .people, .heart, .flame {
+  width: 39.51vw;
+  height: 38.68vw;
+  border-radius: 1.81vw;
+  display: inline-block;
+  position: relative;
+  animation: blink .4s steps(1) alternate infinite;
+  animation-play-state: running;
+  background-color: #F3F3F3;
+  margin-right: 1.11vw;
+  margin-top: 1.11vw;
+  background-size: auto 100%;
+}
+.house {
+  background-image: url("../images/housesprint.svg");
+  margin-left: -1.53vw;
+}
+.people {
+  background-image: url("../images/peoplesprint.svg");
+}
+.heart {
+  background-image: url("../images/heartsprint.svg");
+  margin-left: -1.53vw;
+}
+.flame {
+  background-image: url("../images/flamesprint.svg");
+}
+/* текст */
+.values {
+  position: absolute;
+  width: 78.47vw;
+  height: 19.58vw;
+  left: 50.83vw;
+  top: 266.99vw;
+  margin-left: 1.11vw;
+  border-radius: 0vw 0vw 1.81vw 1.81vw;
+  background-color: #F3F3F3;
+  transform: rotate(90deg);
+  overflow: hidden;
+}
+.values h1 {
+  /* абслют */
+  width: 280.14vw;
+  margin-top: 2.22vw;
+  animation: values-move 7s reverse linear infinite;
+}
+.coloredvalues {
+  color: #E84A0F;
+}
+.house_value, .people_value, .heart_value, .flame_value {
+  position: absolute;
+  width: 39.51vw;
+  height: 38.68vw;
+  border-radius: 1.81vw;
+  display: inline-block;
+  background: #AED9F4;
+  background-size: 100%;
+  opacity: 0;
+  text-align: center;
+}
+.people_value:hover, .house_value:hover, .heart_value:hover, .flame_value:hover {
+  opacity: 1;
+  transition: all .2s;
+}
+.house_value h1, .people_value h1, .heart_value h1, .flame_value h1 {
+  line-height: 9.03vw;
+  margin-top: 13.19vw;
+}
+.people_value h1 {
+  margin-top: 8.89vw;
+}
+
+
+/* футер */
 .footer {
   overflow: hidden;
   padding-top: 3.47vw;
   width: 100vw;
 }
+/* бегущая строка */
 .footer img {
   width: 377.01vw;
   align-items: center;
   animation: footer-move 4s linear infinite;
   animation-play-state: running;
 }
+/* подпись */
 .footer_text {
   width: 100%;
   display: flex;
@@ -330,14 +341,6 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
 .footer p {
   color: #F3F3F3;
 }
-.stone1 {
-  position: absolute;
-  margin-left: -20.83vw;
-  margin-top: 34.51vw;
-  width: 25.69vw;
-  height: 50.69vw;
-}
-
 
 
 /* анимации */
@@ -349,14 +352,14 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   0% {margin-left: -126.39vw;}
   100% {margin-left: 0vw;}
 }
-  @keyframes blink {
-    0% {background-position: 0 top;}
-    20% {background-position: 25% top;}
-    40% {background-position: 50% top;}
-    60% {background-position: 75% top;}
-    80% {background-position: 100% top;}
-    100% {background-position: 125% top;}
-  }
+@keyframes blink {
+  0% {background-position: 0 top;}
+  20% {background-position: 25% top;}
+  40% {background-position: 50% top;}
+  60% {background-position: 75% top;}
+  80% {background-position: 100% top;}
+  100% {background-position: 125% top;}
+}
 @keyframes values-move {
   0% {margin-left: -201.67vw;}
   100% {margin-left: 0vw;}
