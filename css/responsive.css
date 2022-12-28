@@ -14,9 +14,33 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+  overflow-x: hidden;
+  max-width: 480px;
+}
+.tophouses, .bottomhouses {
+  width: 406.04vw;
+}
+.bottomhouses {
+  margin-top: 11vw;
+}
+.XXL, .NYC, .Intimate, .WTF, .A, .Acorn, .Socrate, .Bungalow {
+  width: 49.17vw;
+  height: 49.17vw;
+}
 .logo1 {
-  width: 86.88vw;
-  height: 26.88vw; }
+  width: 89vw;
+  height: 28vw;
+  margin-top: 1vw;
+}
+@keyframes tophouses-move {
+  0% {margin-left: -202.92vw;}
+  100% {margin-left: 0vw;}
+}
+@keyframes bottomhouses-move {
+  0% {margin-left: -202.92vw;}
+  100% {margin-left: 0vw;}
+}
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {

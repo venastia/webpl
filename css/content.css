@@ -142,7 +142,7 @@ h1 {
   background-color: #F3F3F3;
   margin-right: 1.11vw;
   margin-top: 1.11vw;
-
+  background-size: auto 100%;
 }
 .house {
   background-image: url("../images/housesprint.svg");
@@ -330,14 +330,14 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   0% {margin-left: -126.39vw;}
   100% {margin-left: 0vw;}
 }
-@keyframes blink {
-  0% {background-position: 0vw top;}
-  20% {background-position: -39.51vw top;}
-  40% {background-position: -79.03vw top;}
-  60% {background-position: -118.54vw top;}
-  80% {background-position: -158.06vw top;}
-  100% {background-position: -197.57vw top;}
-}
+  @keyframes blink {
+    0% {background-position: 0 top;}
+    20% {background-position: 25% top;}
+    40% {background-position: 50% top;}
+    60% {background-position: 75% top;}
+    80% {background-position: 100% top;}
+    100% {background-position: 125% top;}
+  }
 @keyframes values-move {
   0% {margin-left: -201.67vw;}
   100% {margin-left: 0vw;}
@@ -345,4 +345,5 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
 @keyframes footer-move {
   0% {margin-left: -265.42vw;}
   100% {margin-left: 0vw;}
+}
 }

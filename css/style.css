@@ -1,5 +1,6 @@
 @import 'reset.css';
 @import 'content.css';
+@import "responsive.css";
 @font-face {
   font-family: "TT Norms Pro Normal";
   src: local("TT Norms Pro Normal"),
@@ -7,4 +8,3 @@
     font-weight: 450;
     font-style: normal;
 }
-@import "responsive.css";
