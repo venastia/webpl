@@ -304,6 +304,10 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   opacity: 0;
     transition: all .3s;
 }
+.secondblock h2 {
+  display: none;
+  position: absolute;
+}
 
 .footer {
   overflow: hidden;

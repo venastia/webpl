@@ -21,6 +21,9 @@
 .tophouses, .bottomhouses {
   width: 406.04vw;
 }
+.firstblock p, .firstblock h2 {
+  opacity: 1;
+}
 .bottomhouses {
   margin-top: 11vw;
 }
@@ -34,7 +37,7 @@
   margin-top: 1vw;
 }
 .values {
-
+  margin: 0;
   width: 100vw;
   height: 19.58vw;
   left: 0vw;
@@ -76,12 +79,23 @@ h2 {
 .stone1 {
   margin-left: -18vw;
 }
+.secondblock h2 {
+  display: block;
+  color: #F3F3F3;
+  margin-top: -83vw;
+  margin-left: 82vw;
+  width: 14vw;
+}
 @keyframes tophouses-move {
   0% {margin-left: -202.92vw;}
   100% {margin-left: 0vw;}
 }
 @keyframes bottomhouses-move {
   0% {margin-left: -202.92vw;}
+  100% {margin-left: 0vw;}
+}
+@keyframes values-move {
+  0% {margin-left: -233.33vw;}
   100% {margin-left: 0vw;}
 }
 }
