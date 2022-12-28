@@ -91,9 +91,9 @@ h1 {
 
 }
 .logo {
-  margin: 0 auto;
-  width: 62.08vw;
-  height: 19.17vw;
+    width: 100vw;
+    height: 19.17vw;
+    text-align: center;
 }
 .logo1 {
   width: 62.08vw;
@@ -293,6 +293,7 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
 .footer {
   overflow: hidden;
   padding-top: 3.47vw;
+  width: 100vw;
 }
 .footer img {
   width: 377.01vw;
@@ -304,7 +305,7 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
   padding: 3.47vw 3.47vw;
 }
 .footer p {
@@ -312,8 +313,10 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
 }
 .stone1 {
   position: absolute;
-  margin-left: -300px;
+  margin-left: -20.83vw;
   margin-top: 34.51vw;
+  width: 25.69vw;
+  height: 50.69vw;
 }
 
 
