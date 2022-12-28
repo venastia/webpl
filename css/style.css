@@ -1,4 +1,3 @@
-@import "responsive.css";
 @import 'reset.css';
 @import 'content.css';
 @font-face {
@@ -8,3 +7,4 @@
     font-weight: 450;
     font-style: normal;
 }
+@import "responsive.css";
