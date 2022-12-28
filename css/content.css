@@ -5,6 +5,7 @@ body {
   background-color: #11112B;
   overflow-x: hidden;
 }
+
 a { color: inherit;
 }
 * {
@@ -12,20 +13,20 @@ a { color: inherit;
 }
 /* общие свойства */
 h2 {
-  font-size: 1.6vw;
-  line-height: 2vw;
+  font-size: 2.22vw;
+  line-height: 2.85vw;
   color: #11112B;
   font-weight: normal;
 }
 p {
-  font-size: 10.8vw;
-  line-height: 1vw;
+  font-size: 1.11vw;
+  line-height: 1.39vw;
   color: #11112B;
   font-weight: normal;
 }
 h1 {
-  font-size: 7.9vw;
-  line-height: 10.1vw;
+  font-size: 10.97vw;
+  line-height: 14.03vw;
   color: #11112B;
   font-weight: normal;
 }
@@ -39,12 +40,13 @@ h1 {
 .XXL, .NYC, .Intimate, .WTF, .A, .Acorn, .Socrate, .Bungalow {
   position: relative;
   background-color: #F3F3F3;
-  width: 21.95vw;
-  height: 21.95vw;
-  border-radius: 1.3vw;
-  margin-left: 0.8vw;
-  padding-left: 1.65vw;
-  padding-top: 1.35vw;
+  width: 30.49vw;
+  height: 30.49vw;
+  border-radius: 1.81vw;
+  margin-left: 1.11vw;
+  padding-left: 2.29vw;
+  padding-top: 1.88vw;
+  background-size: 100%;
 }
 .firstblock p, .firstblock h2 {
   opacity: 0;
@@ -76,6 +78,7 @@ h1 {
 .WTF:hover, .Acorn:hover, .Socrate:hover, .Bungalow:hover, .A:hover, .NYC:hover, .Intimate:hover, .XXL:hover, .WTF:hover{
   background-color: #AED9F4;
   transition: all .3s;
+  background-size: 100%;
 
 }
 .WTF:hover p, .Acorn:hover p, .Socrate:hover p, .Bungalow:hover p, .A:hover p, .NYC:hover p, .Intimate:hover p, .XXL:hover p, .WTF:hover p {
@@ -89,13 +92,13 @@ h1 {
 }
 .logo {
   margin: 0 auto;
-  width: 44.7vw;
+  width: 62.08vw;
 }
 /* первый ряд */
 .tophouses {
-  width: 182vw;
+  width: 252.78vw;
   display: flex;
-  padding: 1.5vw 0vw;
+  padding: 2.08vw 0vw;
   animation: tophouses-move 4s linear infinite;
   animation-play-state: running;
 }
@@ -105,9 +108,9 @@ h1 {
 
 /* второй ряд */
 .bottomhouses {
-  width: 182vw;
+  width: 252.78vw;
   display: flex;
-  padding-top: 1.5vw;
+  padding-top: 2.08vw;
   align-items: center;
   animation: bottomhouses-move 4s linear infinite;
   animation-play-state: running;
@@ -119,51 +122,53 @@ h1 {
 
 /* третий блок */
 .thirdblock {
-  padding-top: 2.5vw;
-  width: 72vw;
+  padding-top: 3.47vw;
+  width: 100vw;
   overflow: hidden;
 }
 .house, .people, .heart, .flame {
-  width: 28.5vw;
-  height: 27.85vw;
-  border-radius: 1.3vw;
+  width: 39.51vw;
+  height: 38.68vw;
+  border-radius: 1.81vw;
   display: inline-block;
   position: relative;
   animation: blink .4s steps(1) alternate infinite;
   animation-play-state: running;
   background-color: #F3F3F3;
-  margin-right: 0.8vw;
-  margin-top: 0.8vw;
+  margin-right: 1.11vw;
+  margin-top: 1.11vw;
+
 }
 .house {
   background-image: url("../images/housesprint.svg");
-  margin-left: -1.09vw;
+  margin-left: -1.53vw;
 }
 .people {
   background-image: url("../images/peoplesprint.svg");
 }
 .heart {
   background-image: url("../images/heartsprint.svg");
-  margin-left: -1.09vw;;
+  margin-left: -1.53vw;
 }
 .flame {
   background-image: url("../images/flamesprint.svg");
 }
 .values {
   position: absolute;
-  width: 56.49vw;
-  height: 14.09vw;
-  left: 36.6vw;
-  top: 192.95vw;
-  border-radius: 0vw 0vw 1.3vw 1.3vw;
+  width: 78.47vw;
+  height: 19.58vw;
+  left: 50.83vw;
+  top: 267.99vw;
+  border-radius: 0vw 0vw 1.81vw 1.81vw;
   background-color: #F3F3F3;
   transform: rotate(90deg);
   overflow: hidden;
+
 }
 .values h1 {
   /* абслют */
-  width: 201.7vw;
-  margin-top: 1.6vw;
+  width: 280.14vw;
+  margin-top: 2.22vw;
   animation: values-move 7s reverse linear infinite;
 }
 .coloredvalues {
@@ -171,11 +176,12 @@ h1 {
 }
 .house_value, .people_value, .heart_value, .flame_value {
   position: absolute;
-  width: 28.5vw;
-  height: 27.85vw;
-  border-radius: 1.3vw;
+  width: 39.51vw;
+  height: 38.68vw;
+  border-radius: 1.81vw;
   display: inline-block;
   background: #AED9F4;
+  background-size: 100%;
   opacity: 0;
   text-align: center;
 }
@@ -184,55 +190,55 @@ h1 {
   transition: all .2s;
 }
 .house_value h1, .people_value h1, .heart_value h1, .flame_value h1 {
-  line-height: 6.5vw;
-  margin-top: 9.5vw;
+  line-height: 9.03vw;
+  margin-top: 13.19vw;
 }
 .people_value h1 {
-  margin-top: 6.4vw;
+  margin-top: 8.89vw;
 }
 
 .secondblock {
   overflow: hidden;
-  padding-top: 2.5vw;
+  padding-top: 3.47vw;
   position: relative;
-  margin-left: 6.5vw;
+  margin-left: 9.03vw;
 }
 .dining {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
   clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
   position: absolute;
-  margin-left: -6.4vw;
+  margin-left: -86.88vw;
 }
 .dining:hover {
   opacity: 0;
-  transition: all .3s;
+    transition: all .3s;
 }
 .sleeping {
   -webkit-clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
 clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   position: absolute;
-  margin-left: -34.75vw;
+  margin-left: -48.26vw;
 }
 .sleeping:hover {
   opacity: 0;
-  transition: all .3s;
+    transition: all .3s;
 }
 .working {
   -webkit-clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
   clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
   position: absolute;
-  margin-left: -62.55vw;
-  margin-top: 28.05vw;
+  margin-left: -86.88vw;
+  margin-top: 38.96vw;
 }
 .working:hover {
   opacity: 0;
-  transition: all .3s;
+    transition: all .3s;
 }
 .living {
   -webkit-clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
 clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
   position: absolute;
-  margin-left: -62.64vw;
+  margin-left: -87.01vw;
   margin-top: 0vw;
 }
 .living:hover {
@@ -243,8 +249,8 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   -webkit-clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
   clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
   position: absolute;
-  margin-left: -24.7vw;
-  margin-top: 65.3vw;
+  margin-left: -34.31vw;
+  margin-top: 90.69vw;
 }
 .washing:hover {
   opacity: 0;
@@ -254,8 +260,8 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
   position: absolute;
-  margin-left: -62.55vw;
-  margin-top: 83.95vw;
+  margin-left: -86.88vw;
+  margin-top: 116.60vw;
 }
 .stairs:hover {
   opacity: 0;
@@ -264,10 +270,10 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
 
 .footer {
   overflow: hidden;
-  padding-top: 2.5vw;
+  padding-top: 3.47vw;
 }
 .footer img {
-  width: 271.45vw;
+  width: 377.01vw;
   align-items: center;
   animation: footer-move 4s linear infinite;
   animation-play-state: running;
@@ -277,41 +283,41 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5vw 2.5vw;
+  padding: 3.47vw 3.47vw;
 }
 .footer p {
   color: #F3F3F3;
 }
 .stone1 {
   position: absolute;
-  margin-left: -15vw;
-  margin-top: 24.85vw;
+  margin-left: -300px;
+  margin-top: 34.51vw;
 }
 
 
 
 /* анимации */
 @keyframes tophouses-move {
-  0% {margin-left: -91vw;}
+  0% {margin-left: -126.39vw;}
   100% {margin-left: 0vw;}
 }
 @keyframes bottomhouses-move {
-  0% {margin-left: -91vw;}
+  0% {margin-left: -126.39vw;}
   100% {margin-left: 0vw;}
 }
 @keyframes blink {
   0% {background-position: 0vw top;}
-  20% {background-position: -28.5vw top;}
-  40% {background-position: -56.89999999999999vw top;}
-  60% {background-position: -85.35000000000001vw top;}
-  80% {background-position: -113.79999999999998vw top;}
-  100% {background-position: -142.25vw top;}
+  20% {background-position: -39.51vw top;}
+  40% {background-position: -79.03vw top;}
+  60% {background-position: -118.54vw top;}
+  80% {background-position: -158.06vw top;}
+  100% {background-position: -197.57vw top;}
 }
 @keyframes values-move {
-  0% {margin-left: -145.2vw;}
+  0% {margin-left: -201.67vw;}
   100% {margin-left: 0vw;}
 }
 @keyframes footer-move {
-  0% {margin-left: -191.1vw;}
+  0% {margin-left: -265.42vw;}
   100% {margin-left: 0vw;}
 }
