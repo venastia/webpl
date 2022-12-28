@@ -3,8 +3,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'TT Norms Pro Normal', sans-serif;
   background-color: #11112B;
-}
-body {
   overflow-x: hidden;
 }
 a { color: inherit;
@@ -14,20 +12,20 @@ a { color: inherit;
 }
 /* общие свойства */
 h2 {
-  font-size: 32px;
-  line-height: 41px;
+  font-size: 1.6vw;
+  line-height: 2vw;
   color: #11112B;
   font-weight: normal;
 }
 p {
-  font-size: 16px;
-  line-height: 20.5px;
+  font-size: 10.8vw;
+  line-height: 1vw;
   color: #11112B;
   font-weight: normal;
 }
 h1 {
-  font-size: 158px;
-  line-height: 202px;
+  font-size: 7.9vw;
+  line-height: 10.1vw;
   color: #11112B;
   font-weight: normal;
 }
@@ -41,12 +39,12 @@ h1 {
 .XXL, .NYC, .Intimate, .WTF, .A, .Acorn, .Socrate, .Bungalow {
   position: relative;
   background-color: #F3F3F3;
-  width: 439px;
-  height: 439px;
-  border-radius: 26px;
-  margin-left: 16px;
-  padding-left: 33px;
-  padding-top: 27px;
+  width: 21.95vw;
+  height: 21.95vw;
+  border-radius: 1.3vw;
+  margin-left: 0.8vw;
+  padding-left: 1.65vw;
+  padding-top: 1.35vw;
 }
 .firstblock p, .firstblock h2 {
   opacity: 0;
@@ -91,13 +89,13 @@ h1 {
 }
 .logo {
   margin: 0 auto;
-  width: 894px;
+  width: 44.7vw;
 }
 /* первый ряд */
 .tophouses {
-  width: 3640px;
+  width: 182vw;
   display: flex;
-  padding: 30px 0px;
+  padding: 1.5vw 0vw;
   animation: tophouses-move 4s linear infinite;
   animation-play-state: running;
 }
@@ -107,9 +105,9 @@ h1 {
 
 /* второй ряд */
 .bottomhouses {
-  width: 3640px;
+  width: 182vw;
   display: flex;
-  padding-top: 30px;
+  padding-top: 1.5vw;
   align-items: center;
   animation: bottomhouses-move 4s linear infinite;
   animation-play-state: running;
@@ -121,51 +119,51 @@ h1 {
 
 /* третий блок */
 .thirdblock {
-  padding-top: 50px;
-  width: 1440px;
+  padding-top: 2.5vw;
+  width: 72vw;
   overflow: hidden;
 }
 .house, .people, .heart, .flame {
-  width: 569px;
-  height: 557px;
-  border-radius: 26px;
+  width: 28.5vw;
+  height: 27.85vw;
+  border-radius: 1.3vw;
   display: inline-block;
   position: relative;
   animation: blink .4s steps(1) alternate infinite;
   animation-play-state: running;
   background-color: #F3F3F3;
-  margin-right: 16px;
-  margin-top: 16px;
+  margin-right: 0.8vw;
+  margin-top: 0.8vw;
 }
 .house {
   background-image: url("../images/housesprint.svg");
-  margin-left: -22px;
+  margin-left: -1.09vw;
 }
 .people {
   background-image: url("../images/peoplesprint.svg");
 }
 .heart {
   background-image: url("../images/heartsprint.svg");
-  margin-left: -22px;
+  margin-left: -1.09vw;;
 }
 .flame {
   background-image: url("../images/flamesprint.svg");
 }
 .values {
   position: absolute;
-  width: 1130px;
-  height: 282px;
-  left: 732px;
-  top: 3859px;
-  border-radius: 0px 0px 26px 26px;
+  width: 56.49vw;
+  height: 14.09vw;
+  left: 36.6vw;
+  top: 192.95vw;
+  border-radius: 0vw 0vw 1.3vw 1.3vw;
   background-color: #F3F3F3;
   transform: rotate(90deg);
   overflow: hidden;
 }
 .values h1 {
   /* абслют */
-  width: 4034px;
-  margin-top: 32px;
+  width: 201.7vw;
+  margin-top: 1.6vw;
   animation: values-move 7s reverse linear infinite;
 }
 .coloredvalues {
@@ -173,9 +171,9 @@ h1 {
 }
 .house_value, .people_value, .heart_value, .flame_value {
   position: absolute;
-  width: 569px;
-  height: 557px;
-  border-radius: 26px;
+  width: 28.5vw;
+  height: 27.85vw;
+  border-radius: 1.3vw;
   display: inline-block;
   background: #AED9F4;
   opacity: 0;
@@ -186,56 +184,56 @@ h1 {
   transition: all .2s;
 }
 .house_value h1, .people_value h1, .heart_value h1, .flame_value h1 {
-  line-height: 130px;
-  margin-top: 190px;
+  line-height: 6.5vw;
+  margin-top: 9.5vw;
 }
 .people_value h1 {
-  margin-top: 128px;
+  margin-top: 6.4vw;
 }
 
 .secondblock {
   overflow: hidden;
-  padding-top: 50px;
+  padding-top: 2.5vw;
   position: relative;
-  margin-left: 130px;
+  margin-left: 6.5vw;
 }
 .dining {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
   clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
   position: absolute;
-  margin-left: -1251px;
+  margin-left: -6.4vw;
 }
 .dining:hover {
   opacity: 0;
-    transition: all .3s;
+  transition: all .3s;
 }
 .sleeping {
   -webkit-clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
 clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   position: absolute;
-  margin-left: -695px;
+  margin-left: -34.75vw;
 }
 .sleeping:hover {
   opacity: 0;
-    transition: all .3s;
+  transition: all .3s;
 }
 .working {
   -webkit-clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
   clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
   position: absolute;
-  margin-left: -1251px;
-  margin-top: 561px;
+  margin-left: -62.55vw;
+  margin-top: 28.05vw;
 }
 .working:hover {
   opacity: 0;
-    transition: all .3s;
+  transition: all .3s;
 }
 .living {
   -webkit-clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
 clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
   position: absolute;
-  margin-left: -1253px;
-  margin-top: 0px;
+  margin-left: -62.64vw;
+  margin-top: 0vw;
 }
 .living:hover {
   opacity: 0;
@@ -245,8 +243,8 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   -webkit-clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
   clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
   position: absolute;
-  margin-left: -494px;
-  margin-top: 1306px;
+  margin-left: -24.7vw;
+  margin-top: 65.3vw;
 }
 .washing:hover {
   opacity: 0;
@@ -256,8 +254,8 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
   position: absolute;
-  margin-left: -1251px;
-  margin-top: 1679px;
+  margin-left: -62.55vw;
+  margin-top: 83.95vw;
 }
 .stairs:hover {
   opacity: 0;
@@ -266,10 +264,10 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
 
 .footer {
   overflow: hidden;
-  padding-top: 50px;
+  padding-top: 2.5vw;
 }
 .footer img {
-  width: 5429px;
+  width: 271.45vw;
   align-items: center;
   animation: footer-move 4s linear infinite;
   animation-play-state: running;
@@ -279,41 +277,41 @@ clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 50px;
+  padding: 2.5vw 2.5vw;
 }
 .footer p {
   color: #F3F3F3;
 }
 .stone1 {
   position: absolute;
-  margin-left: -300px;
-  margin-top: 497px;
+  margin-left: -15vw;
+  margin-top: 24.85vw;
 }
 
 
 
 /* анимации */
 @keyframes tophouses-move {
-  0% {margin-left: -1820px;}
-  100% {margin-left: 0px;}
+  0% {margin-left: -91vw;}
+  100% {margin-left: 0vw;}
 }
 @keyframes bottomhouses-move {
-  0% {margin-left: -1820px;}
-  100% {margin-left: 0px;}
+  0% {margin-left: -91vw;}
+  100% {margin-left: 0vw;}
 }
 @keyframes blink {
-  0% {background-position: 0px top;}
-  20% {background-position: -569px top;}
-  40% {background-position: -1138px top;}
-  60% {background-position: -1707px top;}
-  80% {background-position: -2276px top;}
-  100% {background-position: -2845px top;}
+  0% {background-position: 0vw top;}
+  20% {background-position: -28.5vw top;}
+  40% {background-position: -56.89999999999999vw top;}
+  60% {background-position: -85.35000000000001vw top;}
+  80% {background-position: -113.79999999999998vw top;}
+  100% {background-position: -142.25vw top;}
 }
 @keyframes values-move {
-  0% {margin-left: -2904px;}
-  100% {margin-left: 0px;}
+  0% {margin-left: -145.2vw;}
+  100% {margin-left: 0vw;}
 }
 @keyframes footer-move {
-  0% {margin-left: -3822px;}
-  100% {margin-left: 0px;}
+  0% {margin-left: -191.1vw;}
+  100% {margin-left: 0vw;}
 }
