@@ -41,7 +41,7 @@
   width: 100vw;
   height: 19.58vw;
   left: 0vw;
-  top: 285vw;
+  top: 327vw;
   border-radius: 0vw;
   background-color: #F3F3F3;
   transform: rotate(0deg);
@@ -54,19 +54,22 @@
   margin-top: 14vw;
 }
 .thirdblock {
-  margin-top: 22vw;
+  margin-top: 19vw;
 }
 .house_value, .people_value, .heart_value, .flame_value {
-  width: 48vw;
-  height: 48vw;
+  width: 49vw;
+  height: 49vw;
   margin-right: 0vw;
 }
 .house, .people, .heart, .flame {
   display: inline-block;
-  width: 48vw;
-  height: 48vw;
-  margin-right: 2vw;
-  margin-top: 2vw;
+  width: 49vw;
+  height: 49vw;
+  margin-right: 0vw;
+  margin-top: 6vw;
+}
+.people, .flame {
+  left: 5vw;
 }
 p {
   font-size: 2.2vw;

@@ -78,12 +78,14 @@ h2 {
   margin-left: 1.11vw;
   padding-left: 2.29vw;
   padding-top: 1.88vw;
-  background-size: 100%;
+  background-size: 102%;
+  background-position: center;
 }
 .WTF:hover, .Acorn:hover, .Socrate:hover, .Bungalow:hover, .A:hover, .NYC:hover, .Intimate:hover, .XXL:hover, .WTF:hover{
   background-color: #AED9F4;
   transition: all .3s;
-  background-size: 100%;
+  background-size: 102%;
+  background-position: center;
 }
 .Socrate {
   background-image: url('../images/Socrates.svg');
@@ -149,9 +151,10 @@ h2 {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
   clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
   position: absolute;
-  margin-left: -86.88vw;
+  margin-left: -86.79vw;
   width: 49.10vw;
   height: 39.79vw;
+  margin-top: 0.1vw;
   text-align: center;
 }
 .dining:hover {
@@ -165,6 +168,7 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   margin-left: -48.26vw;
   width: 48.26vw;
   height: 62.15vw;
+  margin-top: 0.1vw;
   text-align: center;
 }
 .sleeping:hover {
@@ -175,7 +179,7 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   -webkit-clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
   clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
   position: absolute;
-  margin-left: -86.88vw;
+  margin-left: -86.79vw;
   margin-top: 38.96vw;
   width: 38.47vw;
   height: 30vw;
@@ -193,6 +197,7 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   margin-top: 0vw;
   width: 62.50vw;
   height: 117.50vw;
+  margin-top: 0.1vw;
   text-align: center;
 }
 .living:hover {
@@ -204,7 +209,7 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
   position: absolute;
   margin-left: -34.31vw;
-  margin-top: 90.69vw;
+  margin-top: 90.79vw;
   width: 34.31vw;
   height: 26.67vw;
   text-align: center;
@@ -217,9 +222,9 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
   position: absolute;
-  margin-left: -86.88vw;
+  margin-left: -87.4vw;
   margin-top: 116.60vw;
-  width: 60vw;
+  width: 61vw;
   height: 26.32vw;
   text-align: center;
 }
@@ -286,7 +291,7 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
 }
 .values h1 {
   /* абслют */
-  width: 280.14vw;
+  width: 280.14027777778vw;
   margin-top: 2.22vw;
   animation: values-move 7s reverse linear infinite;
 }
@@ -359,13 +364,13 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   60% {background-position: 75% top;}
   80% {background-position: 100% top;}
   100% {background-position: 125% top;}
-}
+  }
 @keyframes values-move {
-  0% {margin-left: -201.67vw;}
+  0% {margin-left: -204vw;}
   100% {margin-left: 0vw;}
 }
 @keyframes footer-move {
-  0% {margin-left: -265.42vw;}
+  0% {margin-left: -290vw;}
   100% {margin-left: 0vw;}
 }
 }
