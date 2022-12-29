@@ -90,6 +90,7 @@ h2 {
 }
 .Bungalow {
   background-image: url('../images/bungalow.svg');
+  background-size: 103%;
 }
 .A {
   background-image: url('../images/A.svg');
