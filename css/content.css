@@ -18,8 +18,6 @@ a { color: inherit;
 p, h2, h1 {
   font-weight: normal;
   color: #11112B;
-  color: #11112B;
-  font-weight: normal;
 }
 p {
   font-size: 1.11vw;
@@ -33,39 +31,36 @@ h2 {
   font-size: 2.22vw;
   line-height: 2.85vw;
 }
-
-
+.tophouses, .bottomhouses, .footer_text {
+  display: flex;
+}
+.firstblock, .logo, .thirdblock, .footer, .footer_text {
+  width: 100%;
+}
 /* первый блок */
 .firstblock {
   display: block;
-  width: 100%;
   overflow: hidden;
+}
+/* внутренние блоки */
+.tophouses, .bottomhouses {
+  width: 252.78vw;
+  padding: 2.08vw;
+  align-items: center;
+  animation-play-state: running;
 }
 .firstblock p, .firstblock h2 {
   opacity: 0;
 }
 /* первый ряд построек */
 .tophouses {
-  width: 252.78vw;
-  display: flex;
-  padding: 2.08vw;
   animation: tophouses-move 4s linear infinite;
-  animation-play-state: running;
 }
-.tophouses:hover {
-  animation-play-state: paused;
-}
-
 /* второй ряд построек */
 .bottomhouses {
-  width: 252.78vw;
-  display: flex;
-  padding-top: 2.08vw;
-  align-items: center;
   animation: bottomhouses-move 4s linear infinite;
-  animation-play-state: running;
 }
-.bottomhouses:hover{
+.tophouses:hover, .bottomhouses:hover {
   animation-play-state: paused;
 }
 /* карточки построек */
@@ -121,9 +116,8 @@ h2 {
 }
 /* лого */
 .logo {
-    width: 100vw;
-    height: 19.17vw;
-    text-align: center;
+  height: 19.17vw;
+  text-align: center;
 }
 .logo1 {
   width: 62.08vw;
@@ -132,67 +126,58 @@ h2 {
 
 
 /* второй блок */
+.secondblock, .plan {
+  position: relative;
+}
+.dining, .sleeping, .working, .living, .washing, .stairs, .stone1 {
+  position: absolute;
+}
+.dining:hover, .sleeping:hover, .working:hover, .living:hover, .washing:hover, .stairs:hover {
+  opacity: 0;
+  transition: all .3s;
+}
 .secondblock {
   overflow: hidden;
   padding-top: 3.47vw;
-  position: relative;
   text-align: center;
 }
 .secondblock h2 {
   display: none;
-  position: absolute;
 }
 .plan {
-  position: relative;
   width: 86.88vw;
   height: 142.92vw;
 }
 .dining {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
   clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
-  position: absolute;
   margin-left: -86.79vw;
   width: 49.10vw;
   height: 39.79vw;
   margin-top: 0.1vw;
   text-align: center;
 }
-.dining:hover {
-  opacity: 0;
-    transition: all .3s;
-}
 .sleeping {
   -webkit-clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
-clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
-  position: absolute;
+  clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   margin-left: -48.26vw;
   width: 48.26vw;
   height: 62.15vw;
   margin-top: 0.1vw;
   text-align: center;
 }
-.sleeping:hover {
-  opacity: 0;
-    transition: all .3s;
-}
 .working {
   -webkit-clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
   clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
-  position: absolute;
   margin-left: -86.79vw;
   margin-top: 38.96vw;
   width: 38.47vw;
   height: 30vw;
   text-align: center;
 }
-.working:hover {
-  opacity: 0;
-    transition: all .3s;
-}
 .living {
   -webkit-clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
   clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
-  position: absolute;
   margin-left: -87.01vw;
   margin-top: 0vw;
   width: 62.50vw;
@@ -200,41 +185,26 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   margin-top: 0.1vw;
   text-align: center;
 }
-.living:hover {
-  opacity: 0;
-  transition: all .3s;
-}
 .washing {
   -webkit-clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
   clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
-  position: absolute;
   margin-left: -34.31vw;
   margin-top: 90.79vw;
   width: 34.31vw;
   height: 26.67vw;
   text-align: center;
 }
-.washing:hover {
-  opacity: 0;
-  transition: all .3s;
-}
 .stairs {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
-  position: absolute;
   margin-left: -87.4vw;
   margin-top: 116.60vw;
   width: 61vw;
   height: 26.32vw;
   text-align: center;
 }
-.stairs:hover {
-  opacity: 0;
-  transition: all .3s;
-}
 /* камень */
 .stone1 {
-  position: absolute;
   margin-left: -18vw;
   margin-top: 34.51vw;
   width: 25.69vw;
@@ -246,6 +216,9 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
 .thirdblock {
   padding-top: 3.47vw;
   width: 100vw;
+  height: 85vw;
+}
+.values, .thirdblock {
   overflow: hidden;
 }
 /* картинки */
@@ -281,16 +254,14 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   position: absolute;
   width: 78.47vw;
   height: 19.58vw;
-  left: 50.83vw;
-  top: 266.99vw;
+  left: 50vw;
+  margin-top: -49vw;
   margin-left: 1.11vw;
   border-radius: 0vw 0vw 1.81vw 1.81vw;
   background-color: #F3F3F3;
   transform: rotate(90deg);
-  overflow: hidden;
 }
 .values h1 {
-  /* абслют */
   width: 280.14027777778vw;
   margin-top: 2.22vw;
   animation: values-move 7s reverse linear infinite;
@@ -298,12 +269,18 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
 .coloredvalues {
   color: #E84A0F;
 }
+.cards1, .cards2 {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .house_value, .people_value, .heart_value, .flame_value {
   position: absolute;
+  display: inline-block;
   width: 39.51vw;
   height: 38.68vw;
   border-radius: 1.81vw;
-  display: inline-block;
   background: #AED9F4;
   background-size: 100%;
   opacity: 0;
@@ -326,7 +303,6 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
 .footer {
   overflow: hidden;
   padding-top: 3.47vw;
-  width: 100vw;
 }
 /* бегущая строка */
 .footer img {
@@ -337,8 +313,6 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
 }
 /* подпись */
 .footer_text {
-  width: 100%;
-  display: flex;
   justify-content: space-between;
   text-align: center;
   padding: 3.47vw 3.47vw;
@@ -364,7 +338,7 @@ clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
   60% {background-position: 75% top;}
   80% {background-position: 100% top;}
   100% {background-position: 125% top;}
-  }
+}
 @keyframes values-move {
   0% {margin-left: -204vw;}
   100% {margin-left: 0vw;}
